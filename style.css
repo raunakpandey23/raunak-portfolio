@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.profile img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.profile h1{
+    font-size:35px;
+}
+
+.profile p{
+    color:#ddd;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#90caf9;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#1976d2,#42a5f5);
+    color:white;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#0d47a1;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0d47a1;
+    color:white;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+#skills ul,
+#certificates ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    list-style:none;
+}
+
+#skills li,
+#certificates li{
+    background:#1976d2;
+    color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+#skills li:hover,
+#certificates li:hover{
+    transform:translateY(-5px);
+}
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:12px 0;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    color:#1976d2;
+    font-size:30px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#0d47a1;
+    transform:scale(1.2);
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+    font-size:30px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+}
+
+}
